@@ -1,4 +1,4 @@
-!pip install BeautifulSoup
+pip install BeautifulSoup
 import streamlit as st
 import pandas as pd
 import requests
@@ -759,3 +759,4 @@ else:
 if st.button("Refresh Snapshot Data"):
 
     st.rerun()
+
