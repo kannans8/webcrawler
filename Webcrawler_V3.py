@@ -1,3 +1,4 @@
+!pip install BeautifulSoup
 import streamlit as st
 import pandas as pd
 import requests
@@ -756,4 +757,5 @@ else:
     st.info("No records found for the selected filters.")
 
 if st.button("Refresh Snapshot Data"):
+
     st.rerun()
