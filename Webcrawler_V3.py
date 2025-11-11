@@ -22,7 +22,7 @@ import os
 import time
 import pandas as pd
 
-DB_PATH = "C:\\Users\\KANNANS8\\Downloads\\Subeesh\\Keyword search\\agentic ai\\webcrawler_DB_11-2-2025.db"
+DB_PATH = "webcrawler_DB_11-2-2025.db"
 
 def get_base64_of_bin_file(bin_file):
     with open(bin_file, "rb") as f:
@@ -31,7 +31,7 @@ def get_base64_of_bin_file(bin_file):
 
 st.set_page_config(page_title="Keyword Search AI", layout="wide")
 
-base64_img = get_base64_of_bin_file("C:/Users/KANNANS8/Downloads/Subeesh/Keyword search/Picture1.png")
+base64_img = get_base64_of_bin_file("Picture1.png")
 
 st.markdown(
     """
@@ -759,4 +759,5 @@ else:
 if st.button("Refresh Snapshot Data"):
 
     st.rerun()
+
 
