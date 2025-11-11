@@ -31,7 +31,7 @@ def get_base64_of_bin_file(bin_file):
 
 st.set_page_config(page_title="Keyword Search AI", layout="wide")
 
-# base64_img = get_base64_of_bin_file("Picture1.png")
+base64_img = get_base64_of_bin_file("Picture1.png")
 
 st.markdown(
     """
@@ -759,6 +759,7 @@ else:
 if st.button("Refresh Snapshot Data"):
 
     st.rerun()
+
 
 
 
