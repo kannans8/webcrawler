@@ -223,7 +223,7 @@ def summarize_text(text):
     # Secondary_Keywords: ["guidance", "reflection paper", "draft", "guideline", "consultation", "regulatory decision"]
     # Concepts_to_include: ["Real-World Data (RWD)", "Real-World Evidence (RWE)", "evidence generation"]
     try:
-        genai.configure(api_key="AIzaSyCWKOPXv28q0Tm39PNs0IlzPjFZpvXUb_A")
+        genai.configure(api_key="AIzaSyDmbrTFpYfqQ-WuSdqZD62KsEINgGNDRc4")
         model = genai.GenerativeModel('gemini-2.5-flash')
         prompt_instruction="You are an analystic , you are creating a report by searching a medical or government webistes to show any new updates are there in the website. Understand the line of texts or sentences and summarize the content in 200 words give importants to action items . make the content in bullet points . Exclude content related to advertisment, Contact Information. "
         full_prompt = f"{prompt_instruction}\n\n{text}"
@@ -235,7 +235,7 @@ def summarize_text(text):
 
 def summarize_text_full(text):
     try:
-        genai.configure(api_key="AIzaSyCWKOPXv28q0Tm39PNs0IlzPjFZpvXUb_A")
+        genai.configure(api_key="AIzaSyDmbrTFpYfqQ-WuSdqZD62KsEINgGNDRc4")
         model = genai.GenerativeModel('gemini-2.5-flash')
         prompt_instruction="summary the excel information into a 2 page paragraph. give emphasis on summary column , on top give stats about how many links in the data and how many links had error and  give sitetation from the link column"
         full_prompt = f"{prompt_instruction}\n\n{text}"
@@ -758,5 +758,6 @@ else:
 
 if st.button("Refresh Snapshot Data"):
     st.rerun()
+
 
 
